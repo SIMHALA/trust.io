@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sri Pasupathinath Gosamrakshana Saala Trust</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="TrustLogo.ico" alt="Sri Pasupathinath Gosamarakshana Saala Trust Logo" width="80" height="80">
+		</div>
+		<div class="trust-name">
+			<h1><strong>Sri Pasupathinath Gosamarakshana Saala Trust</strong></h1>
+		</div>
+	</header>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#about">About</a>
+		<a href="#trust-members">Trust Members</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+		<a href="#donate">Donate</a>
+	</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+	<div class="hint">
+		<p style="color:red;">Hint: Avail 80G Income Tax Benefits. Please donate to help feed the cows.</p>
+	</div>
+	<main>
+		<section>
+			<div id="slideshow">
+			<img src="4.jpeg" alt="Image 4">
+			<img src="5.jpeg" alt="Image 5">
+			<img src="6.jpeg" alt="Image 6">
+			<img src="9.jpeg" alt="Image 9">
+			<img src="7.jpeg" alt="Image 7">
+			<img src="8.jpeg" alt="Image 8">
+			<img src="one.jpg" alt="Image 1">
+			<img src="two.jpg" alt="Image 2">
+			<img src="three.jpg" alt="Image 3">
+			
+		</div>
+		</section>
+
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Welcome to Sri Pasupathinath Gosamrakshana Saala Trust, a non-profit organization dedicated to the protection 
+and preservation of cows. Our mission is to provide a safe and healthy environment for cows and promote their 
+well-being through various initiatives.</p>
+			<p>Founded in 2022, our trust has been actively involved in various projects related to cow protection such as cow 
+shelters, veterinary camps, and awareness programs. We believe that cows are sacred and deserve to be treated with 
+respect and care.</p>
+		</section>
+		
+		<section id="trust-members">
+  <h2>Our Trust Members</h2>
+  <ul>
+    <li>
+      <img src="member1.jpg" alt="Member 1" width="200" height="200">
+       <div class="member-details">
+        <h3>Simhala Mohana</h3>
+        <p>Founder & Chairman</p>
+		<p>Mobile: +91 9490002297 </p>
+        <p>Email: simhala.mohana@gmail.com</p>
+      </div>
+    </li>
+    <li>
+      <img src="member2.jpg" alt="Member 2" width="200" height="200">
+      <div class="member-details">
+        <h3>Badikala Vimala</h3>
+        <p>Trustee</p>
+		<p>Mobile: +91 9573058616 </p>
+        <p>Email: badikalavimala@gmail.com</p>
+      </div>
+    </li>
+    <li>
+      <img src="member3.jpg" alt="Member 3" width="200" height="200"v>
+       <div class="member-details">
+        <h3>Simhala Sai Sreenivas</h3>
+        <p>Trustee</p>
+		<p>Mobile: +91 7660071170 </p>
+        <p>Email: simhalasaisreenivas@gmail.com</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+		<section id="projects">
+			<h2>Our Projects</h2>
+			<ul>
+				<li>Cow Shelters</li>
+				<li>Veterinary Camps</li>
+				<li>Cow Adoption Programs</li>
+				<li>Cow Milk Distribution</li>
+			</ul>
+		</section>
+		
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<p>If you have any questions or would like to get involved with our trust, please feel free to contact us:</p>
+			<ul>
+				<li><strong>Address:</strong> 2-39, Kuravapalli, Jangavandlapalli Post, Chinnagottigallu Mandal, Tirupati 
+							Dist, Andhra Pradesh, 517193</li>
+				<li><strong>Email:</strong> spgstrust@gmail.com</li>
+				<li><strong>Phone:</strong> +91 9490002297</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer>
+		<section id="donate">
+			<h2>Donate to our Trust</h2>
+				<p>Thank you for your interest in donating to our trust. Your contribution will help us in our mission to protect and preserve cows. Please find our bank account details below:</p>
+			<ul>
+				<li>Bank Name: State Bank of India</li>
+				<li>Branch Name: Bhakarapet</li>
+				<li>Account Holder Name: Sri Pasupathinath Gosamrakshana Saala Trust</li>
+				<li>Account Number: 41794740604</li>
+				<li>IFSC Code: SBIN0015894</li>
+			</ul>
+			<hr> <!-- Add this line to create a horizontal line -->
+		</section>
+	
+		<p>&copy; 2023 Sri Pasupathinath Gosamrakshana Saala Trust. All rights reserved.</p>
+	</footer>
+	
+	
+	 <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var slides = document.getElementById("slideshow").getElementsByTagName("img");
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex-1].classList.add("active");
+        setTimeout(showSlides, 5000);
+      }
+    </script>
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+</script>
+</body>
+</html>
