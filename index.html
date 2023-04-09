@@ -16,6 +16,7 @@
 			<h1><strong>Sri Pasupathinath Gosamarakshana Saala Trust</strong></h1>
 		</div>
 	</header>
+	<!--
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="#about">About</a>
@@ -24,7 +25,18 @@
 		<a href="#contact">Contact</a>
 		<a href="#donate">Donate</a>
 	</div>
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> */ -->
+		<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#trust-members" onclick="closeNav()">Trust Members</a>
+    <a href="#projects" onclick="closeNav()">Projects</a>
+    <a href="#contact" onclick="closeNav()">Contact</a>
+    <a href="#donate" onclick="closeNav()">Donate</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
 
 	<div class="hint">
 		<p style="color:red;">Hint: Avail 80G Income Tax Benefits. Please donate to help feed the cows.</p>
@@ -142,18 +154,17 @@ respect and care.</p>
           slideIndex = 1;
         }
         slides[slideIndex-1].classList.add("active");
-        setTimeout(showSlides, 5000);
+        setTimeout(showSlides, 3000);
       }
     </script>
 	<script>
-function openNav() {
-  document.getElementById("mySidenav").style.display = "block";
-}
+		function openNav() {
+		document.getElementById("mySidenav").style.display = "block";
+		}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.display = "none";
-}
-</script>
-</script>
+		function closeNav() {
+		document.getElementById("mySidenav").style.display = "none";
+		}
+	</script>
 </body>
 </html>
