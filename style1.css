@@ -30,8 +30,9 @@ ul {
 }
 /* Header styles */
 header {
+  position: relative;
   background-color: #f8f8f8;
-  padding: 20px;
+  padding: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -70,8 +71,90 @@ header {
   margin-top: 5px;
   text-align: center;
 } 
+/* Horizontal Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
 
-/* Side navigation Bar */
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f00;
+}
+
+
+/* Side navigation Bar 
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 60px;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+*/
+
+/*
 <meta name="viewport" content="width=device-width, initial-scale=1">
 body {
   font-family: "Lato", sans-serif;
@@ -125,6 +208,7 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 /* Side navigation Bar end*/
 
 
